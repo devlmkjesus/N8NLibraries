@@ -8,10 +8,7 @@ USER root
 RUN npm install --prefix /usr/local/lib/node_modules docx
 
 # Allow n8n Function nodes to use external packages
-ENV NODE_FUNCTION_ALLOW_EXTERNAL=docx
+ENV NODE_FUNCTION_ALLOW_EXTERNAL=*
 
 # Switch back to node user
 USER node
-
-# Start n8n (this binary exists in PATH already)
-CMD ["tini", "--", "n8n"]

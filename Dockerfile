@@ -1,3 +1,5 @@
-# Start from the official n8n image
 FROM n8nio/n8n:latest
-RUN npm install n8n-nodes-generate-report
+
+USER root
+RUN npm install -g docx
+USER node

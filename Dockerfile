@@ -4,3 +4,4 @@ RUN npm install -g docx
 RUN npm install -g docxtemplater
 RUN npm install -g pizzip
 USER node
+CMD ["n8n"]

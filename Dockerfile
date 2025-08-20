@@ -4,4 +4,3 @@ USER root
 RUN npm install -g docxtemplater pizzip
 USER node
 EXPOSE 5678
-CMD ["n8n"]

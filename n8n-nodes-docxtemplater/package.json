@@ -1,24 +1,7 @@
 {
   "name": "n8n-nodes-docxtemplater",
   "version": "0.1.0",
-  "description": "n8n community node to generate DOCX from templates using docxtemplater",
-  "license": "MIT",
-  "author": "Tu Nombre",
-  "repository": "https://github.com/TU-USUARIO/n8n-nodes-docxtemplater",
-  "keywords": ["n8n-community-node", "docxtemplater", "docx"],
   "main": "dist/nodes/DocxGenerate.node.js",
-  "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
-  },
-  "dependencies": {
-    "docxtemplater": "^3.40.0",
-    "pizzip": "^3.1.7"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0"
-  },
   "n8n": {
     "nodes": [
       "dist/nodes/DocxGenerate.node.js"
